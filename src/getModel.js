@@ -22,8 +22,10 @@ racer.Model.prototype._createSocket = function () {
 }
 
 export default function getModel () {
-  console.log('Detected server, model will not be usable in this scope.')
-  if (isServer) return
+  if (isServer) {
+    console.log('Detected server, model will not be usable in this scope.')
+    return
+  }
 
   let model = racer.createModel()
 
