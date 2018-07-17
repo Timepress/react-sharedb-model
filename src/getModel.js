@@ -1,6 +1,6 @@
 import racer from 'racer'
 import Socket from 'racer-highway/lib/browser/socket'
-let isServer = typeof window === 'undefined'
+const isServer = typeof window === 'undefined'
 const DEFAULT_CLIENT_OPTIONS = {
   base: '/channel',
   reconnect: true,
@@ -22,6 +22,7 @@ racer.Model.prototype._createSocket = function () {
 }
 
 export default function getModel () {
+  console.log('Detected server, model will not be usable in this scope.')
   if (isServer) return
 
   let model = racer.createModel()

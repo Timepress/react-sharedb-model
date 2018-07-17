@@ -19,25 +19,30 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.54",
+    "racer": "^0.9.3",
+    "racer-highway": "^8.1.0"
+  },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-plugin-add-module-exports": "^0.1.2",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-plugin-transform-runtime": "^6.3.13",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "babel-runtime": "^6.26.0",
+    "@babel/cli": "7.0.0-beta.54",
+    "@babel/core": "7.0.0-beta.54",
+    "@babel/plugin-transform-runtime": "7.0.0-beta.54",
+    "@babel/plugin-transform-classes": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.54",
+    "@babel/polyfill": "7.0.0-beta.54",
+    "@babel/preset-env": "7.0.0-beta.54",
+    "@babel/preset-react": "7.0.0-beta.54",
+    "@babel/preset-stage-0": "7.0.0-beta.54",
+    "@babel/register": "7.0.0-beta.54",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
     "prettier-standard": "^7.0.3",
     "standard": "^10.0.3"
   },
   "peerDependencies": {
+    "@babel/runtime": "*",
     "racer": "*",
     "racer-highway": "*"
   }
